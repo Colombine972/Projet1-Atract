@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('fonts') format('woff2'),
+       url('fonts/MyCoolFont-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --primaty-color:    #2E7D8B;
+    --secondary-color:  #F2C94C;
+    --accent-color:     #E57C46;
+    --background-color: #F7F9FA;
+    --title: Montserrat;
+}
