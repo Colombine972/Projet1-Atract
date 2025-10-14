@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,13 @@
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/variables.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 </head>
 
 <body>
@@ -17,7 +23,7 @@
 
     <!--Section Cindy / Home-->
     <section>
-        <h1>Hello tous le monde</h1>
+        
     </section>
 
     <!--Section Solo / Events-->
@@ -31,13 +37,50 @@
     </section>
 
     <!--Section Lisa / FAQ + Footer-->
-    <section>
+    <section class="faq">
+        <h1>FAQ</h1>
+        <div class="accordion">
+            <div class="toggle orange">
+                •	Qu’est-ce que le bénévolat ?
+                <img src="img/faq/chevron-jaune.svg" alt="bouton avec flèche vers le bas">
+            </div>
+            <p class="answer">Le bénévolat est un engagement libre et volontaire au service d’une cause, d’une association ou d’une communauté. Le bénévole donne de son temps, de ses compétences ou de son énergie <span>sans être rémunéré</span>, dans un esprit de solidarité et d’intérêt général.</p>
+        </div>
+        <div class="accordion">
+            <div class="toggle yellow">
+                •	Quelle est la différence entre bénévolat et volontariat ?
+                <img src="img/faq/chevron-bleu.svg" alt="bouton avec flèche vers le bas">
+            </div>
+            <p class="answer">Le bénévolat est un engagement libre et gratuit, souvent à temps partiel, tandis que le volontariat est un engagement formalisé par un contrat, pouvant donner lieu à une indemnisation (comme le Service Civique).<br>
+            En résumé : le bénévolat = libre, volontaire, non rémunéré ; le volontariat = encadré, indemnisé.
+            </p>
+        </div>
+        <div class="accordion">
+            <div class="toggle orange">
+                •	Qui peut devenir bénévole ?
+                <img src="img/faq/chevron-jaune.svg" alt="bouton avec flèche vers le bas">
+            </div>
+            <p class="answer">Tout le monde peut s’engager ! <br>
+            Que vous soyez <span>étudiant, actif, demandeur d’emploi ou retraité</span>, il existe toujours une mission adaptée à votre profil. Certaines associations accueillent même des mineurs à partir de 16 ans (avec autorisation parentale).
+            </p>
+        </div>
+        <div class="accordion">
+            <div class="toggle yellow">
+                •	Combien de temps faut-il consacrer au bénévolat ?
+                <img src="img/faq/chevron-bleu.svg" alt="bouton avec flèche vers le bas">
+            </div>
+            <p class="answer">Il n’y a <span>aucune obligation de durée</span>. <br>
+            Vous pouvez vous engager <span>ponctuellement</span> (pour un événement) ou <span>régulièrement</span> (toutes les semaines, par exemple). L’important, c’est de choisir un rythme qui vous convient et de le communiquer à l’association.
+
+            </p>
+        </div>
 
     </section>
 
     <footer>
 
     </footer>
+    <script src="javascript.js"></script>
 </body>
 
 </html>

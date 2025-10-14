@@ -3,19 +3,21 @@
 }
 
 body {
-  font-family: var(--main-font);
   font-size: 1.25rem;
   background-color: var(--light-color);
   color: var(--dark-color);
   font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
 }
 
 h1 {
   font-size: 4.5rem;
+  font-family: var(--main-font);
 }
 
 h2 {
   font-size: 1.5rem;
+  font-family: var(--main-font);
 }
 
 @media screen and (max-width: 768px) {

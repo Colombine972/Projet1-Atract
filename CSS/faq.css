@@ -1,0 +1,68 @@
+body {
+    background-color: var(--primary-color);
+}
+
+.faq {
+    width: 70%;
+    margin: auto;
+    
+    & h1 {
+        color: var(--secondary-color);
+        text-align: center;
+        text-shadow: 0 4px 0 rgba(0, 0, 0, 25%);
+        margin-bottom: 24px;
+    }
+
+    & .toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        font-weight: 500;
+        border-radius: 10px;
+        box-shadow: 0 6px 4px rgba(0, 0, 0, 25%);
+        cursor: pointer;
+        margin-top: 24px;
+    }
+
+    & .orange {
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+    }
+
+    & .yellow {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+}
+
+.answer {
+        max-height: 0;
+        color: var(--primary-color);
+        overflow: hidden;
+        opacity: 0;
+        transition : max-height 0.3s ease, opacity 0.5s ease;
+}
+
+.open {
+    max-height: 200px;
+    background-color: var(--light-color);
+    padding: 2rem;
+    margin-left: 5%;
+    border-radius: 0 0 10px 10px;
+    color: var(--dark-color);
+    margin-bottom: 24px;
+    opacity: 1;
+
+    & span {
+        font-weight: 600;
+    }
+}
+
+.accordion:has(p.open) .toggle {
+    border-radius: 10px 10px 0 10px;
+}
+
+.accordion:has(p.open) .toggle img {
+  transform: rotate(180deg);
+}
