@@ -1,0 +1,16 @@
+#logo_img {
+    height: 6rem; /* demander la taille idéal pour un logo dans un header*/
+    width: auto;
+    max-width: 100%;
+}
+
+/* a revoir et a inserer dans index.html*/
+@media(max-width: 768px){
+    #logo{
+        height: 3rem;
+    }
+}
+
+header{
+    background-color: 
+}
