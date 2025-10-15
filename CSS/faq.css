@@ -3,7 +3,7 @@ body {
 }
 
 .faq {
-    width: 70%;
+    width: 80%;
     margin: auto;
     
     & h1 {
@@ -11,6 +11,8 @@ body {
         text-align: center;
         text-shadow: 0 4px 0 rgba(0, 0, 0, 25%);
         margin-bottom: 24px;
+        margin-top: 1rem;
+        letter-spacing: 10px;
     }
 
     & .toggle {
@@ -42,10 +44,14 @@ body {
         overflow: hidden;
         opacity: 0;
         transition : max-height 0.3s ease, opacity 0.5s ease;
+
+        & li {
+            list-style: inside;
+        }
 }
 
 .open {
-    max-height: 200px;
+    max-height: 600px;
     background-color: var(--light-color);
     padding: 2rem;
     margin-left: 5%;
@@ -59,10 +65,11 @@ body {
     }
 }
 
-.accordion:has(p.open) .toggle {
+.accordion:has(.open) .toggle {
     border-radius: 10px 10px 0 10px;
 }
 
-.accordion:has(p.open) .toggle img {
+.accordion:has(.open) .toggle img {
   transform: rotate(180deg);
 }
+
