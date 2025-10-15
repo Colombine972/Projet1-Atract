@@ -1,7 +1,9 @@
 #logo_img {
-    height: 6rem; /* demander la taille idéal pour un logo dans un header*/
+    height: 4rem; /* demander la taille idéal pour un logo dans un header*/
     width: auto;
     max-width: 100%;
+    border-radius: 50%;
+
 }
 
 /* a revoir et a inserer dans index.html*/
@@ -11,6 +13,134 @@
     }
 }
 
+/* le Header ==> le logo et la nav barre*/
 header{
-    background-color: 
+    background-color: var(--dark-color) ;
+    height: 100px;
+    color: var(--light-color);
+    font-size: 1.5rem;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0 30px;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+/*modification pour l'animation de la nav barre*/
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding : 13px 30px; /* a revoir*/
+    font-weight: 500; /* defini l"épaisseur du texte*/
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+nav ul li::after{
+    content: " " ;
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top : 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover::after{
+    top: -50%;
+    opacity: 1; 
+}
+
+nav a{
+    text-decoration: none;  
+    font-family: var(--main-font);
+    color: var(--light-color);
+}
+
+
+/*typewritter*/
+div{
+    background-color: #f2c94c;
+    color: var(--accent-color); /* a revoir avec le black-color qui rend mieux*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  
+}
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    padding: 0 0 0 100px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: var(--light-color); /*couleur d'écriture*/
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 105%;
+    background-color: #f2c94c; /*couleur du derouler cacher*/
+    border-left: 2px solid var(--accent-color);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid var(--dark-color); /*couleur du curseur*/
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "aider";
+    }
+    21%,40%{
+        content: "partager";
+    }
+    41%,60%{
+        content: "passer à l'action";
+    }
+    61%,80%{
+        content: "être utile";
+    }
+    81%,100%{
+        content: "plus de solidarité";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
