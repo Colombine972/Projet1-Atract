@@ -1,3 +1,7 @@
+@import 'partage.css';
+@import 'faq.css';
+@import 'footer.css';
+
 * {
   box-sizing: border-box;
 }
