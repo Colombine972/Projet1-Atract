@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atract</title>
-    <link rel="stylesheet" href="CSS/reset.css" />
-    <link rel="stylesheet" href="CSS/variables.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/variables.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style_cindy_home.css">
     <link rel="stylesheet" href="CSS/event.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-  </head>
+</head>
 
   <body>
-    <header></header>
+    <header>
+    <nav id="main_nav">
+        <img src="img/logos/logo-avec-fond.png" alt="logo" id="logo_img">
+        <ul>
+            <li><a href="#"> HOME </a></li>
+            <li><a href="#"> EVENTS </a></li>
+            <li><a href="#"> PARTAGE </a></li>
+            <li><a href="#"> NEWS </a></li>
+            <li><a href="#"> FAQ </a></li>
+        </ul>
+    </nav>
+    </header>
 
     <!--Section Cindy / Home-->
-    <section></section>
+<section class="home">
+    <div class="animated-text">
+        Je veux&nbsp<span></span>
+    </div>
+    <div class="photo_section">
+      <img src="img/home/pers1.jpg" alt="photo 1" class="img1">
+      <img src="img/home/pers2.jpg" alt="photo 2" class="img2" >
+      <img src="img/home/pers3.jpg" alt="photo 3" class="img3">
+      <img src="img/home/pers4.jpg" alt="photo 4" class="img4">
+      <img src="img/home/pers5.jpg" alt="photo 5" class="img5">
+      <img src="img/home/pers6.jpg" alt="photo 6" class="img6">
+    </div>
 
+    <div class="arbre"> <img src="img/logos/logo-fond-transparent.png" alt="arbre" width="30%"> </div>
+
+    
+    <div class="devenez_benevole">
+       <div class="item item1"> 
+            <p>Ce site a pour but de faire découvrir le bénévolat en France et de mettre en avant chaque mois des associations et des actions solidaires. 
+            Il aide chacun à comprendre, s'informer et s'engager facilement. &#128155;
+            </p>
+       </div>
+       <div class="item item2">
+            <h1>DEVENEZ BÉNÉVOLE</h1>
+       </div>
+       <div class="item item3">
+            <p>comme 20 millions de Français chaque année</p>
+       </div>
+  </div>
+
+</section>   
     <!--Section Solo / Events-->
-    <section id="events">
+ <section id="events">
         <h2>EVENTS</h2>
         <div id="cards">  
             <div class="card" id="1">
@@ -56,7 +97,7 @@
 
         <div class="modal">
           <h3>Faites partie de l’équipe ! </h3>
-          <button class="close_btn">&times;</button>
+          <button class="close_btn_event">&times;</button>
   
           <h4>Vous rêvez de découvrir ce qui se passe derrière le rideau ?</h4>
           
@@ -83,17 +124,220 @@
           <div class="modal_overlay"></div>
         </div>
         <div id="dynamic_modal" class="modal">
-          <button class="close_btn">&times;</button>
+          <button class="close_btn_event">&times;</button>
         </div>
+      </section>
+
+    <!--Section Lisa / Partage-->
+    <section class="partage">
+        <h1>PARTAGE</h1>
+        <div class="partage_container">
+            <ul class="carousel_items">
+                <li class="carousel_item">
+                    <div class="first_line">
+                        <p class="name_card">Jennifer</p>
+                        <p class="dep_card">(33)</p>
+                    </div>
+                    <p class="date_card">12/09/2025</p>
+                    <p class="domaine_card">Aide sociale et solidarité</p>
+                    <p class="story_card">J’ai aidé à distribuer des repas aux sans-abris, et ça m’a profondément touché de voir à quel point un simple sourire ou un repas chaud pouvait redonner un peu d’espoir.</p>
+                </li>
+                <li class="carousel_item">
+                    <div class="first_line">
+                        <p class="name_card">Solo</p>
+                        <p class="dep_card">(59)</p>
+                    </div>
+                    <p class="date_card">20/08/2025</p>
+                    <p class="domaine_card">Environnement, nature et animaux</p>
+                    <p class="story_card">J’ai participé à plusieurs journées de nettoyage de plages avec une association locale. C’était épuisant parfois, mais tellement satisfaisant de voir le résultat à la fin et de sentir qu’on faisait vraiment une différence.</p>
+                </li>
+                <li class="carousel_item">
+                    <div class="first_line">
+                        <p class="name_card">Lisa</p>
+                        <p class="dep_card">(82)</p>
+                    </div>
+                    <p class="date_card">25/07/2025</p>
+                    <p class="domaine_card">Culture, loisirs et patrimoine</p>
+                    <p class="story_card">J’ai été bénévole pendant un festival culturel de ma région, et c’était une aventure incroyable ! J’ai rencontré des artistes, aidé à l’organisation et vécu une ambiance unique pendant plusieurs jours. C’était parfois le chaos, mais toujours dans la bonne humeur. J’en garde un super souvenir, plein d’énergie et de rencontres inattendues.</p>
+                </li>
+                <li class="carousel_item">
+                    <div class="first_line">
+                        <p class="name_card">Cindy</p>
+                        <p class="dep_card">(33)</p>
+                    </div>
+                    <p class="date_card">10/05/2025</p>
+                    <p class="domaine_card">Éducation, formation et accompagnement</p>
+                    <p class="story_card">J’ai fait du bénévolat en donnant des cours à des enfants qui avaient des difficultés scolaires. Les voir reprendre confiance petit à petit, c’était vraiment émouvant. Cette expérience m’a appris la patience et surtout l’importance d’encourager les autres.</p>
+                </li>
+            </ul>
+
+            <div class="interaction">
+                <p>Si vous avez déjà été bénévole, partagez avec nous votre expérience ou mettez nous juste un petit coeur !</p>
+
+                <button class="partager_btn">Partagez votre expérience</button>
+
+                <div class="heart">
+                    <img src="img/logos/heart.svg" alt="coeur">
+                    <button class="nb_fan">11</button>
+                </div>
+            </div>
+        </div>
+
+        <dialog id="modal_dialog">
+            <form method="dialog">
+                <div class="name_dep">
+                    <div class="name_group">
+                        <label for="name">Prénom*</label><br>
+                        <input type="text" id="name" placeholder="Mickaël" required>
+                    </div>
+                    <div class="dep_group">
+                        <label for="dep">Département*</label><br>
+                        <input type="text" id="dep" placeholder="33" maxlength="2" required>
+                    </div>
+                </div>
+
+                <label for="domaine">Domaine de bénévolat*</label>
+                <select name="domaine" id="domaine" required>
+                    <option value="">--Choisir un domaine--</option>
+                    <option value="Aide sociale et solidarité">Aide sociale et solidarité</option>
+                    <option value="Éducation, formation et accompagnement">Éducation, formation et accompagnement</option>
+                    <option value="Environnement, nature et animaux">Environnement, nature et animaux</option>
+                    <option value="Santé et bien-être">Santé et bien-être</option>
+                    <option value="Solidarité internationale et humanitaire">Solidarité internationale et humanitaire</option>
+                    <option value="Culture, loisirs et patrimoine">Culture, loisirs et patrimoine</option>
+                    <option value="Sport et vie associative">Sport et vie associative</option>
+                    <option value="Numérique et innovation sociale">Numérique et innovation sociale</option>
+                    <option value="Urgences et sécurité civile">Urgences et sécurité civile</option>
+                </select>
+
+                <label for="story">Partagez votre expérience de bénévolat*</label>
+                <textarea id="story" name="story" rows="15" cols="50" placeholder="Votre expérience" required></textarea>
+                <p>*Champs obligatoires</p>
+
+                <div class="button_group">
+                    <button class="send_btn">ENVOYER</button>
+                    <button class="close_btn">FERMER</button>
+                </div>
+            </form>
+        </dialog>
+
     </section>
 
     <!--Section Jen / News-->
-    <section></section>
+    <section>
+
+    </section>
 
     <!--Section Lisa / FAQ + Footer-->
-    <section></section>
-
-    <footer></footer>
+    <section class="faq">
+        <h1>FAQ</h1>
+        <article class="accordion">
+            <button class="toggle orange">
+                •	Qu’est-ce que le bénévolat ?
+                <img src="img/faq/chevron-jaune.svg" alt="">
+            </button        >
+            <p class="answer">Le bénévolat est un engagement libre et volontaire au service d’une cause, d’une association ou d’une communauté. Le bénévole donne de son temps, de ses compétences ou de son énergie <span>sans être rémunéré</span>, dans un esprit de solidarité et d’intérêt général.</p>
+        </article>
+        <article class="accordion">
+            <button class="toggle yellow">
+                •	Quelle est la différence entre bénévolat et volontariat ?
+                <img src="img/faq/chevron-bleu.svg" alt="">
+            </button>
+            <p class="answer">Le bénévolat est un engagement libre et gratuit, souvent à temps partiel, tandis que le volontariat est un engagement formalisé par un contrat, pouvant donner lieu à une indemnisation (comme le Service Civique).<br><br>
+            <span>En résumé</span> : le bénévolat = libre, volontaire, non rémunéré ; le volontariat = encadré, indemnisé.
+            </p>
+        </article>
+        <article class="accordion">
+            <button class="toggle orange">
+                •	Qui peut devenir bénévole ?
+                <img src="img/faq/chevron-jaune.svg" alt="">
+            </button>
+            <p class="answer">Tout le monde peut s’engager ! <br>
+            Que vous soyez <span>étudiant, actif, demandeur d’emploi ou retraité</span>, il existe toujours une mission adaptée à votre profil. Certaines associations accueillent même des mineurs à partir de 16 ans (avec autorisation parentale).
+            </p>
+        </article>
+        <article class="accordion">
+            <button class="toggle yellow">
+                •	Combien de temps faut-il consacrer au bénévolat ?
+                <img src="img/faq/chevron-bleu.svg" alt="">
+            </button>
+            <p class="answer">Il n’y a <span>aucune obligation de durée</span>. <br>
+            Vous pouvez vous engager <span>ponctuellement</span> (pour un événement) ou <span>régulièrement</span> (toutes les semaines, par exemple). L’important, c’est de choisir un rythme qui vous convient et de le communiquer à l’association.
+            </p>
+        </article>
+        <article class="accordion">
+            <button class="toggle orange">
+                •	Dans quels domaines peut-on faire du bénévolat ?
+                <img src="img/faq/chevron-jaune.svg" alt="">
+            </button>
+            <ul class="answer">
+                Le bénévolat couvre une <span>multitude</span> de secteurs :<br><br>
+                <li>Solidarité et aide aux personnes</li>
+                <li>Environnement et protection animale</li>
+                <li>Sport et culture</li>
+                <li>Éducation, accompagnement scolaire</li>
+                <li>Santé, handicap, inclusion</li>
+                <li>Urgences et actions humanitaires </li><br>
+            Chaque domaine propose des missions très variées, sur le terrain ou à distance.
+            </ul>
+        </article>
+        <article class="accordion">
+            <button class="toggle yellow">
+                •	Droits et obligations d'un bénévole ?
+                <img src="img/faq/chevron-bleu.svg" alt="">
+            </button>
+            <ul class="answer">
+                Oui, même sans rémunération, le bénévole bénéficie de certains droits :<br><br>
+                <li>Droit à une <span>assurance</span> (souvent prise en charge par l’association)</li>
+                <li>Possibilité de recevoir une <span>attestation de bénévolat</span></li>
+                <li>Accès à des <span>formations internes</span> ou à une reconnaissance de son engagement</li><br>
+                Le bénévolat repose cependant sur la confiance mutuelle : ni contrat de travail, ni salaire.<br><br>
+                Le bénévole s’engage à :<br><br>
+                <li>Respecter les valeurs et les règles de l’association</li>
+                <li>Être ponctuel et fiable</li>
+                <li>Prévenir en cas d’absence ou de désengagement</li>
+                <li>Travailler dans le respect des autres bénévoles et bénéficiaires</li>
+            </ul>
+        </article>
+        <article class="accordion">
+            <button class="toggle orange">
+                •	Quels sont les avantages du bénévolat ?
+                <img src="img/faq/chevron-jaune.svg" alt="">
+            </button>
+            <ul class="answer">
+                S’engager bénévolement, c’est :<br><br>
+                <li>Donner du sens à son temps libre</li>
+                <li>Développer des compétences utiles (travail d’équipe, organisation, communication)</li>
+                <li>Agrandir son réseau social et professionnel</li>
+                <li>Gagner en confiance et en satisfaction personnelle</li>
+                <li>Contribuer concrètement à une cause qui nous tient à cœur</li>
+            </ul>
+        </article>
+        <article class="accordion">
+            <button class="toggle yellow">
+                •	Peut-on faire du bénévolat à distance ?
+                <img src="img/faq/chevron-bleu.svg" alt="">
+            </button>
+            <ul class="answer">
+                Oui, le <span>bénévolat en ligne</span> se développe de plus en plus.<br><br>
+                Exemples :<br>
+                <li>Traduction de documents</li>
+                <li>Aide administrative ou juridique</li>
+                <li>Communication sur les réseaux sociaux</li>
+                <li>Soutien scolaire en visioconférence</li><br>
+                C’est une excellente option pour les personnes à mobilité réduite ou vivant loin des grandes villes.
+            </ul>
+        </article>
+    </section>
+    <footer>
+        <p>© Atract Association</p>
+        <div class="logos_contacts">
+            <a href="mailto:contact@atractassociation.com"><img src="img/logos/logo-mail.svg" alt="Mail"></a>
+            <a href=""><img src="img/logos/logo-facebook.svg" alt="Facebook"></a>
+            <a href=""><img src="img/logos/logo-instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
     <script src="modal.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>

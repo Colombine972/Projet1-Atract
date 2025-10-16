@@ -1,10 +1,10 @@
-const cards = document.querySelectorAll('.card')
+const cardsEvent = document.querySelectorAll('.card')
 const modal = document.querySelector('.modal')
 let dynamicModal = document.querySelector('#dynamic_modal')
-const closeBtn = document.querySelector('.close_btn')
+const closeBtn = document.querySelector('.close_btn_event')
 const overlay = document.querySelector('.modal_overlay')
 
-cards.forEach(card => {
+cardsEvent.forEach(card => {
   card.addEventListener('click', indx => {
     let cardId = card.id;
     openModal(cardId)

@@ -1,0 +1,30 @@
+footer {
+    width: 100vw;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 5rem;
+    & p {
+        color: var(--light-color);
+    }
+    & .logos_contacts {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 1rem;
+
+        & p {
+            font-size: 0.8rem;
+        }
+        & .logos_contacts img {
+            width: 22px;
+        }
+    }
+}

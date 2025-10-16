@@ -96,7 +96,7 @@
     color: var(--light-color); 
   }
 
-  .close_btn {
+  .close_btn_event {
     position: absolute;
     top: 2rem;
     right: 2rem;
