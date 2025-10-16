@@ -59,7 +59,6 @@
     flex-shrink: 0;
     flex-basis: 40%;
     margin-left: 1rem;
-    scroll-snap-align: start;
 
     & .first_line {
         display: flex;
@@ -144,15 +143,18 @@
             height: auto;
         }
 
-        & >h2 {
+        & >button {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%); 
-            font-size: 4rem;
+            font-size: 3.8rem;
             color: var(--secondary-color); 
             text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             cursor: pointer;
+            background-color: var(--primary-color);
+            border: none;
+            font-family: var(--title-font);
         }
     }
 
@@ -182,7 +184,7 @@
     }
 }
 
-.interaction:has(h2:hover) img {
+.interaction:has(.nb_fan:hover) img {
     transform: scale(1.2);
 }
 
@@ -192,7 +194,6 @@
     padding: 1rem 2rem;
     font-size: 1.25rem;
     font-weight: 700;
-    font-family: "Montserrat", sans-serif;
     border-radius: 3rem;
     color: var(--light-color);
     letter-spacing: 2px;
@@ -261,7 +262,7 @@ label {
 
 input, select, textarea {
     font-size: 1.25rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--body-font);
     border-radius: 5px;
     padding: 0.5rem;
     background-color: var(--light-color);
@@ -279,7 +280,7 @@ input, select, textarea {
         padding: 0.5rem 1.5rem;
         color: var(--light-color);
         font-size: 1.25rem;
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--body-font);
         font-weight: 500;
         border-radius: 3rem;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;

@@ -25,7 +25,6 @@ buttonClose.addEventListener("click", () => {
 });
 
 const cards = document.querySelector(".carousel_items");
-let theFirstChild = cards.firstChild;
 const form = document.querySelector("form");
 const nameInput = document.querySelector("#name");
 const depInput = document.querySelector("#dep");
@@ -33,6 +32,7 @@ const firstLine = document.querySelector(".first_line");
 const domaineInput = document.querySelector("#domaine");
 const storyInput = document.querySelector("#story");
 const buttonSend = document.querySelector(".send_btn");
+let theFirstChild = cards.firstChild;
 
 buttonSend.addEventListener("click", function (event) {
     event.preventDefault();
