@@ -96,7 +96,7 @@
     color: var(--light-color); 
   }
 
-  #close_btn {
+  .close_btn {
     position: absolute;
     top: 2rem;
     right: 2rem;
@@ -166,6 +166,22 @@
 .overlay_active {
     transform: scale(1);
     /* transition: 100ms; */
+}
+
+#dynamic_modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  
+  & h2 {
+    font-size: 4rem;
+  }
+
+  & p {
+    font-size: 2rem;
+  }
 }
 
 /* Media */
