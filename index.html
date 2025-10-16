@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atract</title>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/variables.css">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/variables.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <header>
-
-    </header>
+  <body>
+    <header></header>
 
     <!--Section Cindy / Home-->
-    <section>
-
-    </section>
+    <section></section>
 
     <!--Section Solo / Events-->
     <section id="events">
-        <div class="cards">
-            <img src="img/event/ttt.jpg" alt="Teatre Photo">
-            <h3>Festival de Théâtre </h3>
-            <p>Rejoignez l’équipe et vivez la magie des coulisses ! Aidez à l’accueil, à la logistique ou à la technique.</p>
+        <h2>EVENTS</h2>
+        <div id="cards">  
+            <div class="card" id="1">
+                <img src="img/event/ttt.jpg" alt="Teatre Photo">
+                <h3>Festival de Théâtre </h3>
+                <p>Rejoignez l’équipe et vivez la magie des coulisses ! Aidez à l’accueil, à la logistique ou à la technique.</p>
+            </div>
+            <div class="card" id="2">
+                <img src="img/event/resto-ceur.png" alt="Resto du Ceur">
+                <h3>Restos du Cœur</h3>
+                <p>Devenez bénévole pour soutenir les actions solidaires. Participez à la collecte, au service des repas et à la distribution d’aide.</p>
+            </div>
+            <div class="card" id="3">
+                <img src="img/event/sport.png" alt="Sport Photo">
+                <h3>Marathon de la Ville</h3>
+                <p>Intégrez l’équipe d’organisation ! Aidez à l’encadrement des coureurs, à la gestion des stands ou à la distribution d’eau sur le parcours.</p>
+            </div>
+            <div class="card" id="4">
+                <img src="img/event/benevole-mobile-2 1.png" alt="Benevole Photo">
+                <h3>Droits et Protection des Animaux</h3>
+                <p>Engagez-vous pour la cause animale ! Soutenez les refuges, participez aux animations et sensibilisez le public.</p>
+            </div>
         </div>
-        <div class="cards">
-            <img src="img/event/" alt="">
-            <h3></h3>
-            <p></p>
+        
+        <!-- Modal -->
+        <div class="modal">
+          <h3>Faites partie de l’équipe ! </h3>
+          <button id="close_btn">&times;</button>
+  
+          <h4>Vous rêvez de découvrir ce qui se passe derrière le rideau ?</h4>
+          
+            <div class="modal_articles">
+              <article>
+                <h5>Accueil et Orientation</h5>
+                <p>Soyez le premier contact de la magie du festival.</p>
+                <p>Souriez, guidez les visiteurs, distribuez les programmes.</p>
+              </article>
+              <article>
+                <h5>Logistique et Organisation</h5>
+                <p>Aidez à la mise en place des espaces, transport du matériel, coordination.</p>
+                <p>Le cœur battant de l’événement !</p>
+              </article>
+              <article>
+                <h5>Logistique et Organisation</h5>
+                <p>Soutenez les techniciens son, lumière et scène.</p>
+                <p>Découvrez les secrets de la production en direct.</p>
+              </article>
+            </div>
+            <p>Du 15 au 18 juillet 2025  <br>📍 Parc des Arts, Ville Lumière</p>
+            <a href="">rejoindre l'équipe</a>
+          </div>
+        <div class="modal_overlay"></div>
         </div>
-        <div class="cards">
-            <img src="" alt="">
-            <h3></h3>
-            <p></p>
-        </div>
-        <div class="cards">
-            <img src="" alt="">
-            <h3></h3>
-            <p></p>
-        </div>
+        
     </section>
 
     <!--Section Jen / News-->
-    <section>
-
-    </section>
+    <section></section>
 
     <!--Section Lisa / FAQ + Footer-->
-    <section>
+    <section></section>
 
-    </section>
-
-    <footer>
-
-    </footer>
-</body>
-
+    <footer></footer>
+    <script src="modal.js"></script>
+  </body>
 </html>
