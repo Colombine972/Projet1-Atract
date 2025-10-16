@@ -4,29 +4,6 @@ let dynamicModal = document.querySelector('#dynamic_modal')
 const closeBtn = document.querySelector('.close_btn')
 const overlay = document.querySelector('.modal_overlay')
 
-// cards.forEach(card => {
-//   card.addEventListener('click', index => {
-//     modal.classList.add('active')
-//     overlay.classList.add('overlay_active')
-//     console.log(`You Clicked ${card.id}`)
-//   })
-// })
-
-
-
-//   closeBtn.addEventListener('click', () => {
-//     modal.classList.remove('active')
-//     overlay.classList.remove('overlay_active')
-//   })
-
-//   overlay.addEventListener('click', () => {
-//     modal.classList.remove('active')
-//     overlay.classList.remove('overlay_active')
-//   })
-
-
-// alternative modal opening 
-
 cards.forEach(card => {
   card.addEventListener('click', indx => {
     let cardId = card.id;
@@ -55,7 +32,6 @@ function createModal (id) {
   dynamicModal.classList.add('active')
   overlay.classList.add('overlay_active')
 }
-
 
   closeBtn.addEventListener('click', () => {
      modal.classList.remove('active')
