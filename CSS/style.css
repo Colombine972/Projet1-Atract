@@ -1,9 +1,10 @@
+@import "news.css";
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: var(--main-font);
   font-size: 1.25rem;
   background-color: var(--light-color);
   color: var(--dark-color);
@@ -11,10 +12,13 @@ body {
 }
 
 h1 {
+  font-family: var(--main-font);
   font-size: 4.5rem;
+  letter-spacing: 0.12em;
 }
 
 h2 {
+  font-family: var(--main-font);
   font-size: 1.5rem;
 }
 
