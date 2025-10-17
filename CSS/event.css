@@ -1,15 +1,19 @@
 #events {
-    padding: 60px;
+    padding: 0 60px 60px 60px;
     background-color: var(--accent-color);
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-#events>h2 {
-    color: var(--secondary-color);
-    font-size: 2.5rem;
-    font-weight: 600;
+#events>h1 {
+        color: var(--secondary-color);
+        text-align: left;
+        text-shadow: 0 4px 0 rgba(0, 0, 0, 25%);
+        margin-bottom: 24px;
+        margin-top: 1rem;
+        letter-spacing: 10px;
 }
+
 
 #cards {
     display: flex;
