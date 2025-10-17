@@ -1,24 +1,30 @@
 @import "news.css";
+@import "partage.css";
+@import "faq.css";
+@import "footer.css";
 
 * {
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-size: 1.25rem;
   color: var(--dark-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
+  line-height: 1.3;
 }
 
 h1 {
-  font-family: var(--main-font);
   font-size: 4.5rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 10px;
+  font-family: var(--title-font);
 }
 
 h2 {
   font-family: var(--main-font);
   font-size: 1.5rem;
+  font-family: var(--title-font);
 }
 
 @media screen and (max-width: 768px) {

@@ -5,13 +5,12 @@
   --dark-color: #1e2330;
   --light-color: #f7f9fa;
 
-  --main-font: "Bebas Neue", sans-serif;
-
   /* global effect when we point an element with the cursor */
   --timing-pointer-transform: transform 0.3s;
   --timing-pointer-shadow: box-shadow 0.3s;
-
   --pointer-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
   --pointer-scale: 1.03;
+
+  --title-font: "Bebas Neue", sans-serif;
+  --body-font: "Montserrat", sans-serif;
 }
