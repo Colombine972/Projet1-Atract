@@ -6,7 +6,6 @@
 
 body {
   font-size: 1.25rem;
-  background-color: var(--light-color);
   color: var(--dark-color);
   font-family: "Montserrat", sans-serif;
 }

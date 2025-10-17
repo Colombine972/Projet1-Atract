@@ -14,7 +14,6 @@
       rel="stylesheet"
     />
     <script src="news.js" defer></script>
-    <script src="https://www.tiktok.com/embed.js" defer></script>
   </head>
 
   <body>
@@ -27,57 +26,54 @@
     <section></section>
 
     <!--Section Jen / News-->
-    <section id="news_section">
-      <h1 id="news_title">NEWS</h1>
-      <article class="news_article_card">
-        <h2 id="news_article_title">
-          Octobre 2025 — Une vague de solidarité pour les sans-abri à Paris
-        </h2>
-        <p>
-          En ce mois d'octobre, plusieurs associations parisiennes se sont unies pour la « Nuit
-          Solidaire », un événement dédié aux personnes vivant dans la rue à l'approche de l'hiver.
-          Plus de 400 bénévoles se sont mobilisés dans toute la capitale pour distribuer des repas
-          chauds, des couvertures et des kits d'hygiène — mais aussi, et surtout, pour offrir un
-          moment d'écoute et d'humanité. L'initiative, coordonnée par La Mie de Pain et Entourage,
-          rappelle que les petits gestes peuvent avoir un grand impact. Partout en France, des
-          actions similaires se multiplient à Lille, Lyon ou encore Marseille — la preuve que la
-          solidarité continue de grandir.💛
-        </p>
-      </article>
+    <div class="background_news_faq">
+      <section id="news_section">
+        <h1 id="news_title">NEWS</h1>
+        <article class="news_article_card">
+          <h2 id="news_article_title">
+            Octobre 2025 — Une vague de solidarité pour les sans-abri à Paris
+          </h2>
+          <p>
+            En ce mois d'octobre, plusieurs associations parisiennes se sont unies pour la « Nuit
+            Solidaire », un événement dédié aux personnes vivant dans la rue à l'approche de
+            l'hiver. Plus de 400 bénévoles se sont mobilisés dans toute la capitale pour distribuer
+            des repas chauds, des couvertures et des kits d'hygiène — mais aussi, et surtout, pour
+            offrir un moment d'écoute et d'humanité. L'initiative, coordonnée par La Mie de Pain et
+            Entourage, rappelle que les petits gestes peuvent avoir un grand impact. Partout en
+            France, des actions similaires se multiplient à Lille, Lyon ou encore Marseille — la
+            preuve que la solidarité continue de grandir.💛
+          </p>
+        </article>
 
-      <div class="news_carousel_container" aria-label="Carroussel des News">
-        <input type="radio" name="slider" id="item-1" checked />
-        <input type="radio" name="slider" id="item-2" />
-        <input type="radio" name="slider" id="item-3" />
-        <div class="news_carousel_card">
-          <label class="carousel_card" for="card1" id="card1">
-            <img src="./img/news/cantine.png" alt="A la cantine" />
-          </label>
-          <label class="carousel_card" for="card2" id="card2">
-            <img src="./img/news/nuit-solidaire.png" alt="nuit solidaire" />
-          </label>
-          <label class="carousel_card" for="card3" id="card3">
-            <img src="./img/news/rencontres-benevoles.png" alt="rencontre de benevoles" />
-          </label>
+        <div class="news_carousel_container">
+          <input type="radio" name="slider" id="item1" checked />
+          <input type="radio" name="slider" id="item2" />
+          <input type="radio" name="slider" id="item3" />
+
+          <div class="news_carousel_cards">
+            <label class="carousel_card" for="item1" id="card1">
+              <img src="img/news/cantine.png" alt="A la cantine" />
+            </label>
+
+            <label class="carousel_card" for="item2" id="card2">
+              <img src="img/news/nuit-solidaire.png" alt="nuit solidaire" />
+            </label>
+
+            <label class="carousel_card" for="item3" id="card3">
+              <img src="img/news/rencontres-benevoles.png" alt="rencontre de benevoles" />
+            </label>
+          </div>
         </div>
+      </section>
+      <!-- reusable modal for [news-article-card] and [news-carousel-card] content -->
+      <div id="modal" class="modal_overlay">
+        <div class="modal_content"></div>
+        <button class="modal_close" aria-label="Close modal">&times;</button>
       </div>
-    </section>
-    <!-- <blockquote
-              class="tiktok_embed"
-              cite="https://www.tiktok.com/@acf_france/video/7550979815466208534"
-              data-video-id="7550979815466208534"
-              style="max-width: 605px; min-width: 325px"
-            > 
-              
-            </blockquote>-->
-    <!-- reusable modal for [news-article-card] and [news-carousel-card] content -->
-    <div id="modal" class="modal_overlay">
-      <div class="modal_content"></div>
-      <button class="modal_close" aria-label="Close modal">&times;</button>
-    </div>
 
-    <!--Section Lisa / FAQ + Footer-->
-    <section></section>
+      <!--Section Lisa / FAQ + Footer-->
+      <section></section>
+    </div>
 
     <footer></footer>
   </body>
