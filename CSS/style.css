@@ -2,6 +2,7 @@
 @import "partage.css";
 @import "faq.css";
 @import "footer.css";
+@import "home.css";
 
 * {
   box-sizing: border-box;
