@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/variables.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="style_cindy_home.css">
     <link rel="stylesheet" href="CSS/event.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -18,28 +19,22 @@
 
   <body>
     <header>
+    <nav id="main_nav">
         <img src="img/logos/logo-avec-fond.png" alt="logo" id="logo_img">
-        <nav class="main_nav" id="main_nav">  
         <ul>
-            <li><a href="#home"> HOME </a></li>
-            <li><a href="#events"> EVENTS </a></li>
-            <li><a href="#partage"> PARTAGE </a></li>
+            <li><a href="#"> HOME </a></li>
+            <li><a href="#"> EVENTS </a></li>
+            <li><a href="#"> PARTAGE </a></li>
             <li><a href="#"> NEWS </a></li>
-            <li><a href="#faq"> FAQ </a></li>
+            <li><a href="#"> FAQ </a></li>
         </ul>
-        </nav>
-              <!-- Bouton hamburger -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    </nav>
     </header>
 
     <!--Section Cindy / Home-->
-<section class="home" id="home">
+<section class="home">
     <div class="animated-text">
-        <p>Je veux&nbsp</p><span></span>
+        Je veux&nbsp<span></span>
     </div>
     <div class="photo_section">
       <img src="img/home/pers1.jpg" alt="photo 1" class="img1">
@@ -50,10 +45,10 @@
       <img src="img/home/pers6.jpg" alt="photo 6" class="img6">
     </div>
 
-    <div class="arbre"> <img src="img/logos/logo-fond-transparent.png" alt="arbre" width="30%" id="arbre"> </div>
-</section>
-   
-<section class="devenez_benevole">
+    <div class="arbre"> <img src="img/logos/logo-fond-transparent.png" alt="arbre" width="30%"> </div>
+
+    
+    <div class="devenez_benevole">
        <div class="item item1"> 
             <p>Ce site a pour but de faire découvrir le bénévolat en France et de mettre en avant chaque mois des associations et des actions solidaires. 
             Il aide chacun à comprendre, s'informer et s'engager facilement. &#128155;
@@ -65,11 +60,12 @@
        <div class="item item3">
             <p>comme 20 millions de Français chaque année</p>
        </div>
-</section>   
+  </div>
 
+</section>   
     <!--Section Solo / Events-->
  <section id="events">
-        <h1>EVENTS</h1>
+        <h2>EVENTS</h2>
         <div id="cards">  
             <div class="card" id="1">
                 <img src="img/event/ttt.jpg" alt="Teatre Photo">
@@ -133,7 +129,7 @@
       </section>
 
     <!--Section Lisa / Partage-->
-    <section class="partage" id="partage">
+    <section class="partage">
         <h1>PARTAGE</h1>
         <div class="partage_container">
             <ul class="carousel_items">
@@ -233,7 +229,7 @@
     </section>
 
     <!--Section Lisa / FAQ + Footer-->
-    <section class="faq" id="faq">
+    <section class="faq">
         <h1>FAQ</h1>
         <article class="accordion">
             <button class="toggle orange">
@@ -341,7 +337,6 @@
             <a href=""><img src="img/logos/logo-instagram.svg" alt="Instagram"></a>
         </div>
     </footer>
-    <script src="test.js"></script>
     <script src="modal.js"></script>
     <script src="javascript.js"></script>
   </body>
